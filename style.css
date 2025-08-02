@@ -1,0 +1,357 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  overflow-x: hidden;
+  background: #010101;
+  font-family: "Outfit", sans-serif;
+  color: rgb(234, 228, 228);
+  font-size: 18px;
+}
+
+section {
+  scroll-margin-top: 50px; 
+  background: transparent;
+}
+
+/* Navbar */
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  vertical-align: middle;
+  width: 100%;
+  z-index: 1000;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  margin: 10px;
+  height: 100%;
+}
+
+.logoimg {
+  width: 50px;
+  height: auto;
+  border-radius: 50%;
+  transition: transform 0.2s ease;
+}
+
+.navlinks ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-evenly;
+  gap: 60px;
+  padding: 10px 30px;
+}
+
+.navlinks a {
+  color: rgb(234, 228, 228);
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* Blob Styles */
+
+.blob {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 500px;
+  height: 500px;
+  background: linear-gradient(135deg, #fe2784, #162cf1);
+  filter: blur(150px);
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+}
+
+.blob-left {
+  position: absolute;
+  top: 120%;
+  left: -150px;
+  width: 400px;
+  height: 400px;
+  background: linear-gradient(45deg, #fe2784, #162cf1);
+  filter: blur(150px);
+  border-radius: 50%;
+  z-index: -1;
+}
+
+.blob-right {
+  position: absolute;
+  top: 240%;
+  right: -150px;
+  width: 400px;
+  height: 400px;
+  background: linear-gradient(100deg, #fe2784, #162cf1);
+  filter: blur(150px);
+  border-radius: 50%;
+  z-index: -1;
+}
+
+/*hero section*/
+
+.hero {
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+  z-index: 2;
+}
+
+.hero-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  flex-direction: column;
+}
+
+.hero-content h1 {
+  font-size: 120px;
+  text-wrap: nowrap;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+  font-family: "Orbitron", sans-serif;
+  color: #f7f7ff;
+}
+
+.hero-content h3 {
+  font-size: 30px;
+  margin: 10px 0;
+  color: #f0aaff;
+}
+
+.learn-more {
+  position: relative;
+  padding: 10px 20px;
+  background: linear-gradient(135deg, cyan, magenta);
+  border: 1px solid #fff;
+  color: rgb(234, 228, 228);
+  border-radius: 30px;
+  cursor: pointer;
+  font-family: inherit;
+  font-weight: bold;
+  overflow: hidden;
+  margin: 20px 0 20px;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.learn-more:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 20px rgba(255, 0, 255, 0.3);
+}
+
+
+/* About Section */
+
+.about {
+  position: relative;
+  padding: 60px 80px;
+  height: 100vh;
+  display: flex;
+  justify-content: center; /* center both sides together */
+  align-items: center;
+  z-index: 2;
+}
+
+.about-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.about-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: stretch;
+  align-self: center;
+  overflow: hidden;
+}
+
+.card {
+  max-width: 250px;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 16px;
+  padding: 20px;
+  margin: 20px;
+  color: #fff;
+  font-weight: 600;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 0 20px rgba(255, 0, 255, 0.1);
+  transition: transform 0.3s ease;
+}
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 25px rgba(255, 0, 255, 0.3);
+}
+
+.card span {
+  display: block;
+  font-weight: 400;
+  font-size: 0.9rem;
+  margin-top: 5px;
+  color: #ccc;
+}
+
+.about-content {
+  flex: 1;
+  max-width: 800px;
+  text-align: center;
+  align-self: center;
+}
+
+.about-content h2 {
+  font-size: 64px;
+  margin-bottom: 30px;
+  color: #f0aaff;
+  line-height: 1.2;
+  overflow: hidden;
+  font-family: "orbitron", sans-serif;
+}
+
+.about-content p {
+  line-height: 1.6;
+  color: #ddd;
+}
+
+/* Contact Section */
+
+.contact {
+  position: relative;
+  padding: 20px;
+  text-align: center;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 2;
+}
+
+.contact-container {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  z-index: 1;
+}
+
+.contact-content {
+  max-width: 600px;
+  text-align: left;
+  align-self: left;
+  margin: 0 auto;
+}
+
+.contact h2 {
+  font-size: 64px;
+  margin-bottom: 20px;
+  color: #f0aaff;
+  align-self: flex-start;
+  font-family: "orbitron", sans-serif;
+}
+
+.contact-content ul {
+  list-style: none;
+  padding: 10px 0;
+  display: flex;
+  justify-content: left;
+  align-items: flex-start;
+  margin-top: 5px;
+  gap: 40px;
+}
+
+.contact-content ul a {
+  color: rgb(234, 228, 228);
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 30px;
+}
+
+.contact-form {
+  max-width: 500px;
+  margin: 0 auto;
+  padding-top: 10px;
+}
+
+.contact-form form {
+  margin: 10px;
+}
+
+
+.contact-form p {
+  margin-bottom: 20px;
+  color: #ddd;
+  font-size: 1.2rem;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 12px 15px;
+  margin-bottom: 15px;
+  border: none;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 16px;
+  color: #fff;
+  font-weight: 600;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 0 20px rgba(255, 0, 255, 0.1);
+}
+
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+  color: #ccc;
+  font-family: "Outfit", sans-serif;
+  font-weight: 300;
+}
+
+.contact-form button {
+  background: linear-gradient(135deg, cyan, magenta);
+  border: none;
+  padding: 12px 20px;
+  border-radius: 30px;
+  margin: 10px 0;
+  color: #fff;
+  font-weight: bold;
+  border: 1px solid #fff;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.contact-form button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 20px rgba(255, 0, 255, 0.3);
+}
+
+/* Footer */
+
+footer {
+  background: transparent;
+  color: rgb(234, 228, 228);
+  text-align: center;
+  padding: 10px;
+  position: relative;
+}
