@@ -1,6 +1,8 @@
 # CSI DMCE landing page
 
-A sleek, futuristic landing page built for CSI-CATT DMCE website.
+A sleek, futuristic landing page built for CSI-CATT DMCE website. <br>
+
+Deployed at Github Pages: https://dipsnc.github.io/csi-landing-page/#
 
 ## Features:
 - Modern/Minimalist aesthetic
@@ -8,15 +10,11 @@ A sleek, futuristic landing page built for CSI-CATT DMCE website.
 - Smoothscrolling sections
 - Contact form layout
 
+  Note: Currently optimized for **desktop view** only. 
+
 ## Preview:
 
-Note: Currently optimized for **desktop view** only. 
-
 ![alt text](image.png)
-
-## Link:
-
-Deployed at Github Pages: https://dipsnc.github.io/csi-landing-page/#
 
 ## Purpose:
 
