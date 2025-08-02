@@ -16,7 +16,7 @@ Note: Currently optimized for **desktop view** only.
 
 ## Link:
 
-Deployed at Github Pages: 
+Deployed at Github Pages: https://dipsnc.github.io/csi-landing-page/#
 
 ## Purpose:
 
